@@ -1,9 +1,14 @@
 import React from 'react';
-import { Container } from './styles';
+import { Container, Search } from './styles';
+
+import logo from '../../assets/logo.svg'
 
 const Home = () => (
     <Container>
-        Olá Mundo!!!
+        <Search>
+            <img src={logo} alt="Logo"></img>
+            Olá Mundo!!!
+        </Search>
     </Container>
 )
 
