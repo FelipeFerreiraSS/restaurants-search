@@ -4,11 +4,11 @@ import TextField, { Input } from '@material/react-text-field';
 import MaterialIcon from '@material/react-material-icon';
 
 
-
 import { Container, Search, Logo, Wrapper, CarroselTitle } from './styles';
 
 import logo from '../../assets/logo.svg'
 import restaurante from '../../assets/restaurante-fake.png'
+import { Card } from '../../components/ImageCard'
 
 const Home = () => {
     const [inputValue, setInputValue] = useState('')
@@ -37,24 +37,13 @@ const Home = () => {
                 </TextField>
                 <CarroselTitle>Na sua área</CarroselTitle>
                 <Slider {...settings}>
-                    <div> 
-                        <img src={restaurante} alt="restaurante"/> 
-                    </div>
-                    <div> 
-                        <img src={restaurante} alt="restaurante"/> 
-                    </div>
-                    <div> 
-                        <img src={restaurante} alt="restaurante"/> 
-                    </div>
-                    <div> 
-                        <img src={restaurante} alt="restaurante"/> 
-                    </div>
-                    <div> 
-                        <img src={restaurante} alt="restaurante"/> 
-                    </div>
-                    <div> 
-                        <img src={restaurante} alt="restaurante"/> 
-                    </div>
+                    <Card photo={restaurante}/>
+                    <Card photo={restaurante}/>
+                    <Card photo={restaurante}/>
+                    <Card photo={restaurante}/>
+                    <Card photo={restaurante}/>
+                    <Card photo={restaurante}/>
+                    <Card photo={restaurante}/>
                 </Slider>
             </Search>
         </Container>

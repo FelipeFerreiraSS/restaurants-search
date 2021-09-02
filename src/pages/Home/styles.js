@@ -1,3 +1,4 @@
+import Slider from 'react-slick';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
@@ -21,6 +22,12 @@ export const Search = styled.section`
 
 export const Logo = styled.img`
     margin-bottom: 15px;
+`
+
+export const Carrosel = styled(Slider)`
+    .slick-slide {
+        margin-reght: 16px
+    }
 `
 
 export const CarroselTitle = styled.h1`
